@@ -3418,12 +3418,13 @@ width:90px;
       padding-left: 40px;
       padding-right: 40px;
 
-      justify-content: space-around;
-
+      justify-content: center;
+      column-gap: 8rem;
+    
       max-width: 67.5rem;
   margin-left: auto;
   margin-right: auto;
-  column-gap: 2.13%;
+ 
     }
 
 
@@ -3438,7 +3439,9 @@ width:90px;
 
 
 
-
+    .twoimages-section .img-container {
+  width: 250px;
+}
 
 
     .flex .text-container {
@@ -3668,8 +3671,147 @@ width:90px;
     }
 
 
+   
 
-    /* sections */
+
+.section-structure {    
+ flex-wrap: nowrap;
+justify-content: space-between;
+column-gap: 8rem;
+display: flex;
+
+flex-direction: row; max-width: 53.75rem;
+  margin-left: auto;
+  margin-right: auto;  
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+@media (max-width: 767px) {
+  .section-structure {    
+
+
+flex-direction: column; 
+
+}
+    }
+
+.black {
+  background-color: black;
+}
+
+
+.h7 { 
+  color: white;
+ 
+    letter-spacing: 0.9px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    display: block;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+ }
+
+
+ @media (max-width: 767px) {
+  .h7 { 
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: normal;
+
+
+ }
+ }
+
+ .left-container {
+  
+  color: white;
+
+ }
+
+ @media (max-width: 767px) {
+  .left-container {
+  text-align: CENTER;
+  color: white;
+
+ }
+ }
+
+
+ .left-container h2 {
+
+
+  font-weight: 800;
+  text-align: LEFT;
+
+ 
+  font-size: 3rem;
+ 
+
+ }
+
+ @media (max-width: 767px) {
+  .left-container h2 {
+
+font-size: 2.375rem;
+font-weight: 800;
+
+margin-bottom: 20px;
+text-transform: uppercase;
+
+text-align: CENTER;
+
+}
+ }
+
+ .left-container .button-container {
+ 
+ padding-top: 2.5rem;
+
+}
+
+
+
+ @media (max-width: 767px) {
+
+  .left-container .button-container {
+ 
+  justify-content: center;
+ 
+
+}
+
+  
+ }
+
+
+ 
+
+ .right-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+ }
+
+ @media (max-width: 767px) {
+  .right-container {
+  display: flex;
+  padding-top: 2.5rem;
+  justify-content: center;
+  width:100%;
+ 
+
+ }
+ }
+
+ 
+
+    /* sections--end*/
 
     /* utilities--end */
 
@@ -3677,7 +3819,7 @@ width:90px;
       align-items: center;
       justify-content: flex-start;
       display: flex;
-      margin-top: 50px;
+  
 
     }
 
@@ -3768,7 +3910,7 @@ width:90px;
 
 
 
-    <header class="gallery-component-hero">
+    <header class="video-hero">
 
 
 
@@ -3777,34 +3919,24 @@ width:90px;
 
 
 
+<amp-video autoplay controls loop
+width="854px"
+height="488px"
+layout="responsive"
+poster="/static/inline-examples/images/kitten-playing.png"
+
+artwork="https://yourhost.com/artworks/artwork.png"
+title="Tell Me Something"
+artist="Daniel Holmes"
+album="Amazing album"
+>
+
+<source src="assets/video/hero.mp4"
+  type="video/mp4" />
+
+</amp-video> 
 
 
-        <div class="title-container">
-
-
-          <h1>
-            Tell Me something
-          </h1>
-
-          <div class="pt2">
-            <p><span>
-
-                We specialize in looped videos, and boomerangs,
-                We specialize in reels video editing services, this content allows for simple but clever execution.
-                in copywriting is social media, web stories
-              </span></p>
-          </div>
-
-          <div class="button-container">
-
-            <a href="https://bassscene.co.uk/porijazz/" target="_blank">
-              Electronic Set
-
-            </a>
-
-          </div>
-
-        </div>
 
 
       </div>
@@ -3958,11 +4090,16 @@ width:90px;
             
               
               
-                
               
-              
-                    <img src="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png" alt="LVMH x Hyper Island" loading="" width="1080" height="1080" style="max-width: 100%; height: 100%;" srcset="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=540&amp;height=540&amp;name=LVMH%20x%20Hyper%20Island.png 540w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png 1080w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1620&amp;height=1620&amp;name=LVMH%20x%20Hyper%20Island.png 1620w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2160&amp;height=2160&amp;name=LVMH%20x%20Hyper%20Island.png 2160w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2700&amp;height=2700&amp;name=LVMH%20x%20Hyper%20Island.png 2700w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=3240&amp;height=3240&amp;name=LVMH%20x%20Hyper%20Island.png 3240w" sizes="(max-width: 1080px) 100vw, 1080px">
+
+
+                      <amp-img src="assets/images/story2.webp" width="1019" height="1019" layout="responsive"></amp-img>
                   
+            
+                
+                
+                
+                
                   </div>
 
 
@@ -4011,9 +4148,11 @@ width:90px;
               
                 
               
-              
-                    <img src="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png" alt="LVMH x Hyper Island" loading="" width="1080" height="1080" style="max-width: 100%; height: 100%;" srcset="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=540&amp;height=540&amp;name=LVMH%20x%20Hyper%20Island.png 540w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png 1080w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1620&amp;height=1620&amp;name=LVMH%20x%20Hyper%20Island.png 1620w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2160&amp;height=2160&amp;name=LVMH%20x%20Hyper%20Island.png 2160w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2700&amp;height=2700&amp;name=LVMH%20x%20Hyper%20Island.png 2700w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=3240&amp;height=3240&amp;name=LVMH%20x%20Hyper%20Island.png 3240w" sizes="(max-width: 1080px) 100vw, 1080px">
-                  
+             
+
+                    <amp-img src="assets/images/story3.webp" width="1019" height="1019" layout="responsive"></amp-img>
+                 
+                 
                   </div>
 
 
@@ -4065,9 +4204,9 @@ width:90px;
               
                 
               
-              
-                    <img src="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png" alt="LVMH x Hyper Island" loading="" width="1080" height="1080" style="max-width: 100%; height: 100%;" srcset="https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=540&amp;height=540&amp;name=LVMH%20x%20Hyper%20Island.png 540w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1080&amp;height=1080&amp;name=LVMH%20x%20Hyper%20Island.png 1080w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=1620&amp;height=1620&amp;name=LVMH%20x%20Hyper%20Island.png 1620w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2160&amp;height=2160&amp;name=LVMH%20x%20Hyper%20Island.png 2160w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=2700&amp;height=2700&amp;name=LVMH%20x%20Hyper%20Island.png 2700w, https://hyperisland.com/hs-fs/hubfs/LVMH%20x%20Hyper%20Island.png?width=3240&amp;height=3240&amp;name=LVMH%20x%20Hyper%20Island.png 3240w" sizes="(max-width: 1080px) 100vw, 1080px">
-                  
+
+                    <amp-img src="assets/images/story4.webp" width="1019" height="1019" layout="responsive"></amp-img>
+                 
                   </div>
 
 
@@ -4158,7 +4297,7 @@ width:90px;
 
 
 
-        <div class="text-container col-12 md-col-5" style="">
+        <div class="text-container col-12 md-col-5" >
 
           <div>
             <h6>
@@ -4187,7 +4326,7 @@ width:90px;
                 technology and 80% creative </strong> —that’s the key to our success.</p>
 
 
-            <div class="button-container">
+            <div class="button-container" style="    margin-top: 50px;">
 
               <a href="https://bassscene.co.uk/porijazz/" target="_blank">
                 CHECK OUR STORY
@@ -4204,7 +4343,7 @@ width:90px;
 
 
             <a href=" " style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600;
-display: block;">
+display: block; padding-left: 20px;">
 
 
 bassscene.co.uk/porijazz/
@@ -4385,7 +4524,7 @@ bassscene.co.uk/porijazz/
         <div class="flex flex-wrap ">
   
   
-          <div class="img-container col-12 md-col-4" style="margin-bottom: 20px;">
+          <div class="img-container " style="margin-bottom: 20px;">
   
   
             <amp-img src="assets/images/dan.png" width="612" height="612" layout="responsive"></amp-img>
@@ -4397,7 +4536,7 @@ bassscene.co.uk/porijazz/
           </div>
   
   
-          <div class="img-container col-12 md-col-4" style="margin-bottom: 20px;">
+          <div class="img-container " style="margin-bottom: 20px;">
   
   
             <amp-img src="assets/images/oks.png" width="612" height="612" layout="responsive"></amp-img>
@@ -4418,30 +4557,20 @@ bassscene.co.uk/porijazz/
 
 
 
-    <section class="section black" style="background-color: black; padding-top: 40px;
-   ">
+    <section class="section black" >
 
-<div class="section-bg" style=" padding-bottom: 40px;
- flex-wrap: nowrap;
-justify-content: space-between;
-column-gap: 8rem;
-display: flex;
-z-index: 5;
-position: relative;
-flex-direction: row; max-width: 53.75rem;
-  margin-left: auto;
-  margin-right: auto;  ">   
+<div class="section-structure" >   
    
 
 
-        <div class="left-container" style="color: white; flex: 1;">
+        <div class="left-container" style="flex: 1;">
 
         
 
 
-            <h6 class="h2" style="color: white;">
+            <span class="h7" >
           Our resources  dghdjghd  hdgjg dghdj
-            </h6>
+            </span>
 
 
 
@@ -4454,19 +4583,15 @@ flex-direction: row; max-width: 53.75rem;
 
         </div>
 
-        <div class="right-container" style="  display: flex;
-  align-items: center;">
+        <div class="right-container" >
       
-       
-            <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
-             letter-spacing: 0.48px;
-              text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #ff7300;"
-              class="button button--primary button--pill button--md font-family-normal"
+       <div class="button-container">   
+            <a 
               href="https://hyperisland.com/en/contact?hsLang=en">
              Download electronic pack
 
             </a>
-
+          </div>
       
         </div>
         
@@ -4485,7 +4610,7 @@ flex-direction: row; max-width: 53.75rem;
 
         <div class="left-container">
 
-          <div class="heading-container">
+         
 
 
             <h2 class="h2">
@@ -4493,29 +4618,19 @@ flex-direction: row; max-width: 53.75rem;
             </h2>
 
 
-          </div>
 
 
 
 
-          <div class="paragraph-container flex">
+         
 
             <p style="color: black;">Contact us and get free counseling! </p>
 
-          </div>
+ 
 
+          <div class="button-container" >
 
-
-
-
-
-          <div class="button-container" style="align-items: center;
-        justify-content: flex-start; display: flex;">
-
-            <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
-             letter-spacing: 0.48px;
-              text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #ff7300;"
-              class="button button--primary button--pill button--md font-family-normal"
+            <a 
               href="https://hyperisland.com/en/contact?hsLang=en">
               BOOK A CALL
 
@@ -4531,12 +4646,8 @@ flex-direction: row; max-width: 53.75rem;
      
 
         
-        <div class="fixed-height-container " style="    position: relative;
-        width: 250px;
-        height: 250px;">
+        <div class="right-container fixed-height-container" >
           <amp-img src="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png" alt="HI_Icon_Team-4" loading="lazy" width="300" height="174" style="max-width: 100%; height: auto;" srcset="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=150&amp;height=87&amp;name=HI_Icon_Team-4.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=450&amp;height=261&amp;name=HI_Icon_Team-4.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=600&amp;height=348&amp;name=HI_Icon_Team-4.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=750&amp;height=435&amp;name=HI_Icon_Team-4.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=900&amp;height=522&amp;name=HI_Icon_Team-4.png 900w" sizes="(max-width: 300px) 100vw, 300px" class="cover" layout="responsive" width="250px" height="250px"></amp-img>
-
-
 
 
 
