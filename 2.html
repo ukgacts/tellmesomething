@@ -2284,7 +2284,7 @@ limitations under the License.
       border-top: solid 3px black;
 
 
-      padding: 2rem 0;
+      padding: 1rem 0;
       z-index: 1000;
       position: relative;
     }
@@ -2305,11 +2305,11 @@ limitations under the License.
       justify-content: center;
       align-items: center;
       position: relative;
-      flex-grow: 1;
+  
       margin: 0;
       display: inline-flex;
-      align-items: center;
-      "
+    
+    
 
     }
 
@@ -2325,11 +2325,7 @@ limitations under the License.
       }
     }
 
-    @media screen and (max-width: 767px) {
-      .logo_wrapper {
-        height: 2rem;
-      }
-    }
+
 
     /**header--xen--end**/
 
@@ -3401,10 +3397,12 @@ width:90px;
 
     @media (max-width: 767px) {
       .imgtext-section .flex.flex-wrap {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         padding-left: 20px;
         padding-right: 20px;
+        gap: 30px;
+    margin-top: 30px;
       }
     }
 
@@ -3515,6 +3513,19 @@ width:90px;
       text-transform: none;
       font-weight: 700;
     }
+
+    @media (max-width: 767px) {
+
+      .text-container h6 {
+        font-size: 1.875rem;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    }
+
+
 
     .text-container div {
       width: 100%;
@@ -3635,7 +3646,10 @@ width:90px;
       .heading-container .h2,
       h2 {
 
-        font-size: 2.375rem;
+        font-size: 1.875rem;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    font-weight: 800;
 
       }
     }
@@ -3670,7 +3684,17 @@ width:90px;
       border-top: solid 0.188rem black;
     }
 
+    @media (max-width: 767px) {
 
+      .section-wrapper {
+   
+      padding-top: 60px;
+      padding-bottom: 60px;
+      
+    }
+
+
+    }
    
 
 
@@ -3823,6 +3847,17 @@ text-align: CENTER;
 
     }
 
+    @media (max-width: 767px) {
+      .button-container {
+     
+      justify-content: center;
+
+  
+
+    }
+
+    }
+
     .button-container a {
       padding: 0.875rem 2.5rem;
       line-height: 100%;
@@ -3832,9 +3867,15 @@ text-align: CENTER;
       text-transform: uppercas;
       border-radius: 4rem;
       border: solid 0.188rem black;
-      background: #ff7300;
+      background: #dcb75f;
 
     }
+
+
+    amp-img.contain img {
+    object-fit: contain;
+  }
+
 
 
 
@@ -3859,24 +3900,32 @@ text-align: CENTER;
 
 <body>
   <!-- Start Navbar -->
-  <header class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
 
 
-    I need logo for this place
+  <header class="ampstart-headerbar  flex   top-0   pl2 pr4" style="justify-content: right; padding-left: 40px;
+  padding-right: 40px;">
 
-    <div class="logo_wrapper ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3">
+    
+
+  
+
+    
 
 
+      <div class="fixed-height-container" style="     position: relative;
+      width: 170px;
+      height: auto;
+ ">
 
-      <a class="logo" href="#">
+   
 
-
-        <amp-img src="img/logo_top.svg" class="contain " style="    object-fit: contain;" width="725px" height="79px"
-          layout="fill"></amp-img>
-      </a>
+        <amp-img src="assets/images/logobw.webp" class="contain "  width="300" height="187"
+        layout="responsive"></amp-img>
+        
+    
     </div>
 
-
+ 
 
 
 
@@ -3920,8 +3969,8 @@ text-align: CENTER;
 
 
 <amp-video autoplay controls loop
-width="854px"
-height="488px"
+width="1920"
+height="1080"
 layout="responsive"
 poster="/static/inline-examples/images/kitten-playing.png"
 
@@ -4692,8 +4741,8 @@ bassscene.co.uk/porijazz/
           <div class="footer__column footer__column--contents">
 
             <div class="wrapper_footer_logo" style="width: 170px; margin-bottom: 1rem;">
-              <amp-img src="img/logo_footer.png" class="contain footer-logo " layout="responsive" width="720"
-                height="177"></amp-img>
+              <amp-img src="assets/images/logocolor.webp" class="contain footer-logo " layout="responsive" width="300"
+                height="187"></amp-img>
 
             </div>
 
