@@ -1504,6 +1504,15 @@ limitations under the License.
       margin: 0;
     }
 
+
+
+    @media (max-width: 767px) {
+      p {
+    font-size:0.75rem;
+    }
+
+    }
+
     .ampstart-accent {
       color: #003f93;
     }
@@ -2282,11 +2291,13 @@ limitations under the License.
     /**header--xen**/
     .ampstart-headerbar {
       border-top: solid 3px black;
-
-
       padding: 1rem 0;
       z-index: 1000;
       position: relative;
+      justify-content: left;
+      padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
     }
 
 
@@ -2294,11 +2305,26 @@ limitations under the License.
     @media screen and (max-width: 767px) {
       .ampstart-headerbar {
         padding: 0.75rem 0;
+        padding-left: 20px;
+  padding-right: 20px;
 
       }
     }
 
-
+    .ampstart-headerbar .fixed-height-container {
+      position: relative;
+      width: 110px;
+      height: auto;
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+      .ampstart-headerbar .fixed-height-container {
+      position: relative;
+      width: 120px;
+      height: auto;
+    }
+    }
 
 
     .logo_wrapper {
@@ -3401,45 +3427,16 @@ width:90px;
         padding-bottom: 30px;
         padding-left: 20px;
         padding-right: 20px;
-        gap: 30px;
-    margin-top: 30px;
-      }
-    }
-
-
-
-
-
-    .twoimages-section .flex.flex-wrap {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      padding-left: 40px;
-      padding-right: 40px;
-
-      justify-content: center;
-      column-gap: 8rem;
     
-      max-width: 67.5rem;
-  margin-left: auto;
-  margin-right: auto;
- 
-    }
 
-
-    @media (max-width: 767px) {
-      .twoimages-section .flex.flex-wrap {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
       }
     }
 
 
 
-    .twoimages-section .img-container {
-  width: 250px;
-}
+
+
+   
 
 
     .flex .text-container {
@@ -3447,7 +3444,7 @@ width:90px;
 
       justify-content: flex-start;
       text-align: LEFT;
-      margin-bottom: 20px;
+ 
     }
 
     .text-container h4 {
@@ -3632,7 +3629,7 @@ width:90px;
 
     .heading-container .h2,
     h2 {
-
+      line-height: 100%;
       font-size: 2.375rem;
       font-weight: 800;
       text-align: LEFT;
@@ -3902,20 +3899,10 @@ text-align: CENTER;
   <!-- Start Navbar -->
 
 
-  <header class="ampstart-headerbar  flex   top-0   pl2 pr4" style="justify-content: right; padding-left: 40px;
-  padding-right: 40px;">
-
-    
-
-  
-
-    
+  <header class="ampstart-headerbar  flex   top-0   pl2 pr4" >
 
 
-      <div class="fixed-height-container" style="     position: relative;
-      width: 170px;
-      height: auto;
- ">
+      <div class="fixed-height-container">
 
    
 
@@ -3926,7 +3913,15 @@ text-align: CENTER;
     </div>
 
  
-
+    <h1 style="font-size: 28px; margin: 10px 0 0 7px;  font-weight: 800; display: block; padding-left: 7px;
+    color: #222;
+    line-height: 1.3; font-size: 1.875rem;
+   ">Startup Page
+      <span style="
+  color: #5e5e5e; line-height: 1;
+  font-weight: 300; color: #444;
+  max-width: 680px;
+ font-size: 0.85rem; display: block; ">Web Stories - a new visual storytelling format </span></h1>
 
 
 
@@ -3968,7 +3963,7 @@ text-align: CENTER;
 
 
 
-<amp-video autoplay controls loop
+<amp-video autoplay loop
 width="1920"
 height="1080"
 layout="responsive"
@@ -4009,9 +4004,13 @@ album="Amazing album"
         <div class="text-container col-12 md-col-5">
 
           <div>
-            <h6>
+
+<h6>What is web stories?</h6>
+            <p>Web Stories, is a new web-based format that allows content creators to craft engaging visual narratives for the open web. These stories immerse readers in fast-loading, full-screen experiences with captivating animations and tappable interactions. Unlike closed ecosystems or platforms, Web Stories are freely available and can be shared and embedded across various platforms.
+            </p>
+            <strong>
               Why Web Stories Matter
-            </h6>
+            </strong>
 
             <p>
 
@@ -4072,7 +4071,7 @@ album="Amazing album"
 
 
     <section class="cards-base-section" style="position: relative;
-      width: 100%; background-image: url('https://hyperisland.com/hubfs/HI_Energizer_OrangeGradient_1920x1080_01-2.png');
+      width: 100%; background-image: url('assets/images/story1.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4568,38 +4567,6 @@ bassscene.co.uk/porijazz/
     </section>
 
 
-    <section class="twoimages-section">
-
-        <div class="flex flex-wrap ">
-  
-  
-          <div class="img-container " style="margin-bottom: 20px;">
-  
-  
-            <amp-img src="assets/images/dan.png" width="612" height="612" layout="responsive"></amp-img>
-            <div>
-              <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories show up in a variety of Search
-                results. Since graduating, I have consistently run my own businesses. My ventures include founding and managing a successful record label, working as a music producer and DJ, and conducting worldwide tours. Additionally, I have launched other businesses that started as hobbies or passions, which I successfully Additionally, I have launched other businesses that started as hobbies or passions, which I successfully </p>
-            </div>
-  
-          </div>
-  
-  
-          <div class="img-container " style="margin-bottom: 20px;">
-  
-  
-            <amp-img src="assets/images/oks.png" width="612" height="612" layout="responsive"></amp-img>
-            <div>
-              <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories show up in a variety of Search Since graduating, I have consistently run my own businesses. My ventures include founding and managing a successful record label, working as a music producer and DJ, and conducting worldwide tours. Additionally, I have launched other businesses that started as hobbies or passions, which I successfully Additionally, I have launched other businesses that started as hobbies or passions, which I successfully 
-                results.</p>
-            </div>
-  
-          </div>
-   
-  
-  
-  
-      </section>
 
 
 
