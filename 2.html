@@ -2169,9 +2169,10 @@ limitations under the License.
       box-shadow: -10px 0 20px rgba(0, 0, 0, 0.12);
       border-radius: 0;
       width: 50px;
-      height: 89px;
+      height: 50px;
       cursor: pointer;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      border: 2px solid #d8d8d8;
     }
 
     .gallery-component-hero-carousel .amp-carousel-button:hover {
@@ -3084,24 +3085,19 @@ limitations under the License.
     }
 
 
-    @media (min-width: 768px) {
-      .carousel-container {
-      width: 53.75rem;
-     
-    }
 
-    }
 
 
 
     @media (min-width: 768px) {
       .carousel-wrapper {
-      width: 53.75rem;
+        width: 53.75rem;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
     justify-content: space-between;
-    column-gap: 40px;
+    gap: 40px;
+
     
      
     }
@@ -3109,7 +3105,9 @@ limitations under the License.
     }
 .carousel-wrapper .img-container {
 
-
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
   margin: 0;
   flex:1;
 
@@ -3131,7 +3129,9 @@ justify-content: center;
 
 .carousel-wrapper .img-container amp-img{
   border-radius: 50%;
-  max-height:160px;
+  height: 165px;
+  width: 165px;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -3152,12 +3152,12 @@ width:120px;
 
 
 .carousel-wrapper .text-container {
-  flex: 1;
+  flex: 3;
 
-  margin: 1rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
 
 }
 
@@ -3228,9 +3228,9 @@ width:120px;
     /*** Footer ***/
 
     .footer {
-      padding: 4.5rem 0;
+      padding: 20px 0;
   background-color: #e9f5ff;
-  color: black;
+  color: #4e4e4e;
   position: relative;
     }
 
@@ -3267,7 +3267,7 @@ width:120px;
 
     @media (min-width: 768px) {
       .footer__column {
-        row-gap: 2.5rem;
+        row-gap: 20px;
         padding: 0;
       }
     }
@@ -3450,7 +3450,7 @@ width:120px;
     /*** img-right-section ***/
 
     .imgtext-section {
-      padding:40px;
+      padding: 40px 40px 0 40px;
     }
 
     @media (max-width: 767px) {
@@ -3946,16 +3946,27 @@ text-align: CENTER;
   <!-- Start Navbar -->
 
 
-  <header class=" flex   top-0   pl2 pr4"  style="margin: 8px auto 40px auto;
+  <header class=" flex   top-0   pl2 pr4"  style="margin: 8px auto 0px auto;
   max-width: 1142px; justify-content: right;">
 
-<h1 style="font-size: 28px; margin: 10px 0 0 7px;  font-weight: 800; display: block; padding-left: 7px;
-color: #222;
-line-height: 1.3; font-size: 1.875rem;
+<h1 style="   font-weight: 800;  padding-left: 7px;
+
+
+
+font-size: 2.5em;
+  color: #232323;
+  margin: 30px 0 0 1.2%;
+  line-height: .65em;
+  display: inline;
+ 
+
+
+
 ">Startup Page
+<br>
   <span style="
 color: #5e5e5e; line-height: 1;
-font-weight: 300; color: #444;
+font-weight: 300; padding-top: 10px;
 max-width: 680px;
 font-size: 0.85rem; display: block; ">Web Stories - a new visual storytelling format </span></h1>
       <div class="fixed-height-container">
@@ -4056,26 +4067,7 @@ album="Amazing album"
 <h6>What is web stories?</h6>
             <p>Web Stories, is a new web-based format that allows content creators to craft engaging visual narratives for the open web. These stories immerse readers in fast-loading, full-screen experiences with captivating animations and tappable interactions. Unlike closed ecosystems or platforms, Web Stories are freely available and can be shared and embedded across various platforms.
             </p>
-            <strong style="margin-top: 30px; display: block;">
-              Why Web Stories Matter
-            </strong>
-
-            <p>
-
-
-              Web Stories bring significant advantages to businesses. First, they
-              improve your visibility on Google Search, helping you reach new
-              audiences. The format is familiar, like the stories we see on Instagram
-              or Facebook, so users find it easy to engage with. Since Web Stories
-              are optimized for SEO, they’ll improve your rankings, leading to more
-              organic traffic.
-              <br> <br>
-
-              Plus, unlike typical social media stories, they don’t
-              expire, and you keep 100% of the ad revenue generated from them.
-
-              <br> <br> <br>
-            </p>
+   
 
 
         
@@ -4106,6 +4098,8 @@ album="Amazing album"
           <div>
             <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories On Google Discover </p>
           </div>
+
+          
         </div>
 
 
@@ -4165,7 +4159,7 @@ album="Amazing album"
 
            <h6>      Our Solution</h6>
          
-         
+         <p>With the developed tissue detection technology for surgery, Marginum aims to make a real impact by helping millions of patients and surgical professionals around the globe.</p>
 
           </div>
 
@@ -4426,44 +4420,7 @@ album="Amazing album"
 
 
 
-            <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
-
-display: block; padding-left: 20px;">
-
-
-bassscene.co.uk/porijazz/
-              
-            
-            
-            
-            
-              <span style="position: relative;
-              right: 0;
-              top: 8px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg></span>
-            
-            
-            </a>
-
-
-
-              <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
-              background-position: left top;
-              background-size: auto ;
-              background-repeat: no-repeat; margin-top: 20px;
-   ">
-                
-                <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
-                  
-                    <p>
-                      
-                      We have created a story example  that promotes and signposts potential visitors to
-              Pori by way of the Pori Jazz Festival. <br>
-                      
-                      *It is best to view on a device. </p>
-                 
-                </div>
-                
-                </div>
+          
 
 
 
@@ -4502,25 +4459,22 @@ bassscene.co.uk/porijazz/
 
 
       <div class="heading-container">
-        <h6> Team</h6>
+        <h6> About us</h6>
+
+<p>With the developed tissue detection technology for surgery, Marginum aims to make a real impact by helping millions of patients and surgical professionals around the globe.</p>
 
 
-
-        <div class="richtext paragraph paragraph--p1">
-          <p>Through experience-based learning you will have the opportunity to learn while working with real clients on
-            their challenges.</p>
-        </div>
 
       </div>
 
       <div class="carousel-container gallery-component-hero-carousel carousel-second">
 
         
-        <amp-carousel height="350px" layout="fixed-height" type="slides" controls>
+        <amp-carousel height="420px" layout="fixed-height" type="slides" controls>
           <div class="carousel-wrapper" >
 
             <div  class="img-container" > 
-            <amp-img src="assets/images/dan.png" class="cover" layout="responsive" width="250px" height="250px"
+            <amp-img src="assets/images/dan.png" class="cover" layout="responsive" width="150px" height="150px"
             
             
             ></amp-img>
@@ -4531,6 +4485,14 @@ bassscene.co.uk/porijazz/
             <div class="text-container">
 
    
+              <p>
+    
+                Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
+                successful record label, working as a music producer and DJ, and conducting worldwide tours.
+                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+                
+              </p>
               <p>
     
                 Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
@@ -4583,6 +4545,15 @@ bassscene.co.uk/porijazz/
             
             </p>
 
+            <p>
+    
+              Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
+              successful record label, working as a music producer and DJ, and conducting worldwide tours.
+              Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+              Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+              
+            </p>
+
             <div class="card__person" style="margin-top: 0.938rem;">
               <h5 style="font-size: 0.875rem;
                   letter-spacing: 0.7px;
@@ -4605,110 +4576,167 @@ bassscene.co.uk/porijazz/
 
 
 
+    <hr class="separator">
 
 
+
+
+
+
+
+    <section class="imgtext-section">
+
+      <div class="flex flex-wrap ">
+
+
+
+
+        <div class="text-container col-12 md-col-6">
+
+          <div>
+
+<h6>Why Web Stories Matter</h6>
+           
+
+            <p>
+
+
+              Web Stories bring significant advantages to businesses. First, they
+              improve your visibility on Google Search, helping you reach new
+              audiences. The format is familiar, like the stories we see on Instagram
+              or Facebook, so users find it easy to engage with. Since Web Stories
+              are optimized for SEO, they’ll improve your rankings, leading to more
+              organic traffic.
+              <br> <br>
+
+              Plus, unlike typical social media stories, they don’t
+              expire, and you keep 100% of the ad revenue generated from them.
+
+              <br> <br> <br>
+            </p>
+
+
+        
+
+
+
+          </div>
+
+        
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="img-container col-12 md-col-6">
+
+          <amp-youtube data-videoid="PEezkSEvMHU" layout="responsive" width="560" height="315"></amp-youtube>
+
+
+
+          <div>
+            <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories On Google Discover </p>
+          </div>
+
+          <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
+
+          display: block; padding-left: 20px;">
+          
+          
+          bassscene.co.uk/porijazz/
+                        
+                      
+                      
+                      
+                      
+                        <span style="position: relative;
+                        right: 0;
+                        top: 8px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg></span>
+                      
+                      
+                      </a>
+          
+          
+          
+                        <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
+                        background-position: left top;
+                        background-size: auto ;
+                        background-repeat: no-repeat; margin-top: 20px;
+             ">
+                          
+                          <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
+                            
+                              <p>
+                                
+                                We have created a story example  that promotes and signposts potential visitors to
+                        Pori by way of the Pori Jazz Festival. <br>
+                                
+                                *It is best to view on a device. </p>
+                           
+                          </div>
+                          
+                          </div>
+        </div>
+
+
+
+
+    </section>
 
 
 
     <section class="section black" >
 
-<div class="section-structure" >   
-   
-
-
-        <div class="left-container" style="flex: 1;">
-
-        
-
-
-            <span class="h7" >
-          Our resources  dghdjghd  hdgjg dghdj
-            </span>
-
-
-
-        
-
-            <p>Contact us and get free counseling! </p>
-
-    
-
-
-        </div>
-
-        <div class="right-container" >
-      
-       <div class="button-container">   
-            <a 
-              href="https://hyperisland.com/en/contact?hsLang=en">
-             Download electronic pack
-
-            </a>
-          </div>
-      
-        </div>
-        
-
-      </div>
-     
-
-    </section>
-
-
-    <section class="section-wrapper">
-
-
-      <div class="section--cta-image">
-
-
-        <div class="left-container">
-
+      <div class="section-structure" >   
          
-
-
-            <h6>
-              Got questions?
-            </h6>
-
-
-
-
-
-
-         
-
-            <p style="color: black;">Contact us and get free counseling! </p>
-
- 
-
-          <div class="button-container" >
-
-            <a 
-              href="https://hyperisland.com/en/contact?hsLang=en">
-              BOOK A CALL
-
-            </a>
-
-          </div>
-
-
-        </div>
-
-
       
-     
+      
+              <div class="left-container" style="flex: 1;">
+      
+              
+      
+      
+                  <span class="h7" >
+                Our resources  dghdjghd  hdgjg dghdj
+                  </span>
+      
+      
+      
+              
+      
+                  <p>Contact us and get free counseling! </p>
+      
+          
+      
+      
+              </div>
+      
+              <div class="right-container" >
+            
+             <div class="button-container">   
+                  <a 
+                    href="https://hyperisland.com/en/contact?hsLang=en">
+                   Download electronic pack
+      
+                  </a>
+                </div>
+            
+              </div>
+              
+      
+            </div>
+           
+      
+          </section>
 
-        
-        <div class="right-container fixed-height-container" >
-          <amp-img src="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png" alt="HI_Icon_Team-4" loading="lazy" width="300" height="174" style="max-width: 100%; height: auto;" srcset="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=150&amp;height=87&amp;name=HI_Icon_Team-4.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=450&amp;height=261&amp;name=HI_Icon_Team-4.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=600&amp;height=348&amp;name=HI_Icon_Team-4.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=750&amp;height=435&amp;name=HI_Icon_Team-4.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=900&amp;height=522&amp;name=HI_Icon_Team-4.png 900w" sizes="(max-width: 300px) 100vw, 300px" class="cover" layout="responsive" width="250px" height="250px"></amp-img>
 
-
-
-        </div>
-
-      </div>
-
-    </section>
 
 
 
@@ -4752,7 +4780,7 @@ bassscene.co.uk/porijazz/
 
         <div class="footer__column footer__column--contents">
 
-          <div class="wrapper_footer_logo" style="width: 170px; margin-bottom: 1rem;">
+          <div class="wrapper_footer_logo" style="width: 170px; ">
             <amp-img src="assets/images/logocolor.webp" class="contain footer-logo " layout="responsive" width="300"
               height="187"></amp-img>
 
@@ -4775,99 +4803,7 @@ bassscene.co.uk/porijazz/
               </span></div>
           </div>
 
-          <div id="hs_cos_wrapper_footer_social"
-            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-social" style=""
-            data-hs-cos-general-type="widget" data-hs-cos-type="module">
-
-
-
-
-
-            <div class="social-links">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <a class="social-links__link" href="https://www.instagram.com/hyperisland" target="_blank"
-                rel="noopener">
-                <span class="icon icon-social icon--instagram icon--white"></span>
-              </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <a class="social-links__link" href="https://www.facebook.com/hyperisland/" target="_blank"
-                rel="noopener">
-                <span class="icon icon-social icon--facebook icon--white"></span>
-              </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <a class="social-links__link" href="https://www.linkedin.com/school/214726/admin/feed/posts/"
-                target="_blank" rel="noopener">
-                <span class="icon icon-social icon--linkedin icon--white"></span>
-              </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <a class="social-links__link" href="https://www.youtube.com/channel/UCef1ZbL39-czXpoGWkGMHhw"
-                target="_blank" rel="noopener">
-                <span class="icon icon-social icon--youtube icon--white"></span>
-              </a>
-
-
-
-            </div>
-          </div>
-
+   
           <div class="footer-copyright"><span class="footer_copyright">
               <p>© 2024 Bassscene </p>
             </span></div>
