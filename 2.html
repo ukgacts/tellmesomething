@@ -27,9 +27,11 @@ limitations under the License.
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-    rel="stylesheet">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
@@ -1513,11 +1515,12 @@ limitations under the License.
     body {
       background: #e9f5ff;
       color: #4a4a4a;
-      font-family: "Roboto Condensed", sans-serif;
+      font-family: "Roboto", sans-serif;
       min-width: 315px;
       overflow-x: hidden;
       font-smooth: always;
       -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
     main {
@@ -1528,6 +1531,7 @@ limitations under the License.
     p {
       padding: 0;
       margin: 0;
+      color: #5e5e5e;
     }
 
 
@@ -1566,11 +1570,7 @@ limitations under the License.
       letter-spacing: 0.06rem;
     }
 
-    .ampstart-subtitle,
-    body {
-      line-height: 1.5rem;
-      letter-spacing: normal;
-    }
+ 
 
     .ampstart-subtitle {
       color: #003f93;
@@ -1644,6 +1644,8 @@ limitations under the License.
     h6 {
       margin: 0;
       padding: 0;
+ font-family: "Roboto Condensed", sans-serif;
+      margin-bottom: 10px;
     
      
     }
@@ -1726,14 +1728,7 @@ limitations under the License.
       padding-left: 1.5rem;
     }
 
-    body {
-      color: #000;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-optical-sizing: auto;
 
-      font-style: normal;
-      line-height: 1.6;
-    }
 
     .gallery-base-content {
       background: #fff;
@@ -2342,8 +2337,8 @@ limitations under the License.
       position: relative;
       width: 160px;
       height: auto;
-      top: 39px;
-      top: 65px;
+ 
+  
   z-index: 88;
     }
     
@@ -2351,7 +2346,7 @@ limitations under the License.
     @media screen and (max-width: 767px) {
       header .fixed-height-container {
       position: relative;
-      width: 120px;
+      width: 130px;
       height: auto;
     }
     }
@@ -2586,6 +2581,84 @@ limitations under the License.
 
 
   <style amp-custom="xen">
+
+
+/*** Font ***/
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*** Font-end ***/
+
     /*** Video-header ***/
 
     header .title-container {
@@ -3418,7 +3491,7 @@ width:120px;
       border: solid 0.188rem black;
     
       background-color: white;
-  row-gap: 1.25rem;
+  row-gap: 10px;
 
   height: 100%;
   justify-content: space-between;
@@ -3467,7 +3540,7 @@ width:120px;
 
     @media (max-width: 767px) {
       .imgtext-section .flex.flex-wrap {
-        padding-top: 30px;
+        padding-top: 20px;
         padding-bottom: 30px;
      
     
@@ -3487,6 +3560,7 @@ width:120px;
       margin-top: 30px;
       justify-content: flex-start;
       text-align: LEFT;
+      padding-bottom: 20px;
  
     }
 
@@ -3567,7 +3641,7 @@ width:120px;
 
     @media (max-width: 767px) {
       .text-container h6 {
-text-align: center;
+        margin-bottom: 10px;
     }
     }
 
@@ -3742,141 +3816,6 @@ text-align: center;
    
 
 
-.section-structure {    
- flex-wrap: nowrap;
-justify-content: space-between;
-column-gap: 40px;
-display: flex;
-
-flex-direction: row; max-width: 53.75rem;
-  margin-left: auto;
-  margin-right: auto;  
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
-@media (max-width: 767px) {
-  .section-structure {    
-
-
-flex-direction: column; 
-
-}
-    }
-
-.black {
-  background-color: black;
-}
-
-
-.h7 { 
-  color: white;
- 
-    letter-spacing: 0.9px;
-    line-height: 100%;
-    margin-bottom: 20px;
-    display: block;
-
-    font-size: 2.5rem;
-    font-weight: 600;
- }
-
-
- @media (max-width: 767px) {
-  .h7 { 
-    text-transform: uppercase;
-    font-size: 1.875rem;
-    font-weight: normal;
-
-
- }
- }
-
- .left-container {
-  
-  color: white;
-
- }
-
- @media (max-width: 767px) {
-  .left-container {
-  text-align: CENTER;
-  color: white;
-
- }
- }
-
-
- .left-container h2 {
-
-
-  font-weight: 800;
-  text-align: LEFT;
-
- 
-  font-size: 3rem;
- 
-
- }
-
- @media (max-width: 767px) {
-  .left-container h2 {
-
-font-size: 2.375rem;
-font-weight: 800;
-
-margin-bottom: 20px;
-text-transform: uppercase;
-
-text-align: CENTER;
-
-}
- }
-
- .left-container .button-container {
- 
- padding-top: 2.5rem;
-
-}
-
-
-
- @media (max-width: 767px) {
-
-  .left-container .button-container {
- 
-  justify-content: center;
- 
-
-}
-
-  
- }
-
-
- 
-
- .right-container {
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
- }
-
- @media (max-width: 767px) {
-  .right-container {
-  display: flex;
-  padding-top: 2.5rem;
-  justify-content: center;
-  width:100%;
- 
-
- }
- }
-
  
 
     /* sections--end*/
@@ -3946,29 +3885,10 @@ text-align: CENTER;
   <!-- Start Navbar -->
 
 
-  <header class=" flex   top-0   pl2 pr4"  style="margin: 8px auto 0px auto;
-  max-width: 1142px; justify-content: right;">
-
-<h1 style="   font-weight: 800;  padding-left: 7px;
+  <header class=" flex   top-0   pl1 pr1"  style="
+  max-width: 1142px; justify-content: space-between;   align-items: center; margin: 10px auto;">
 
 
-
-font-size: 2.5em;
-  color: #232323;
-  margin: 30px 0 0 1.2%;
-  line-height: .65em;
-  display: inline;
- 
-
-
-
-">Startup Page
-<br>
-  <span style="
-color: #5e5e5e; line-height: 1;
-font-weight: 300; padding-top: 10px;
-max-width: 680px;
-font-size: 0.85rem; display: block; ">Web Stories - a new visual storytelling format </span></h1>
       <div class="fixed-height-container">
 
    
@@ -3980,7 +3900,27 @@ font-size: 0.85rem; display: block; ">Web Stories - a new visual storytelling fo
     </div>
 
  
+    <h1 style="   font-weight: 800;  margin-bottom: 0;
 
+
+
+font-size: 1.8em;
+
+      line-height: .65em;
+      flex-direction: column;
+     
+    display: flex;
+    color: #999;
+  width: fit-content;
+
+    
+    ">Startup Page
+    <br>
+      <span style="
+line-height: 1;
+    font-weight: 300; padding-top: 10px;
+    max-width: 680px; max-width:fit-content;
+    font-size: 0.85rem; display: inline-block;  font-weight: 500;">Web Stories - a new visual <br> storytelling format </span></h1>
 
 
 
@@ -4064,13 +4004,33 @@ album="Amazing album"
 
           <div>
 
-<h6>What is web stories?</h6>
+<h6>What Are Web Stories?</h6>
             <p>Web Stories, is a new web-based format that allows content creators to craft engaging visual narratives for the open web. These stories immerse readers in fast-loading, full-screen experiences with captivating animations and tappable interactions. Unlike closed ecosystems or platforms, Web Stories are freely available and can be shared and embedded across various platforms.
             </p>
    
 
 
         
+            <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
+
+            display: block; padding-left: 20px;">
+            
+            
+            bassscene.co.uk/porijazz/
+                          
+                        
+                        
+                        
+                        
+                          <span style="position: relative;
+                          right: 0;
+                          top: 8px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg></span>
+                        
+                        
+                        </a>
+            
+            
+            
 
 
 
@@ -4091,14 +4051,39 @@ album="Amazing album"
 
         <div class="img-container col-12 md-col-6">
 
-          <amp-youtube data-videoid="PEezkSEvMHU" layout="responsive" width="560" height="315"></amp-youtube>
+          <amp-video  autoplay loop
+          width="1920"
+          height="1080"
+          layout="responsive"
+          > 
+          <source src="assets/video/phone story5.mp4"
+          type="video/mp4" />
+        </amp-video>
 
 
 
           <div>
-            <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories On Google Discover </p>
+            <p style="color: #999; margin-top: 10px; text-align:center;"> Web Stories On Google Discover </p>
           </div>
 
+          <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
+          background-position: left top;
+          background-size: auto ;
+          background-repeat: no-repeat; margin-top: 20px;
+">
+            
+            <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
+              
+                <p>
+                  
+                  We have created a story example  that promotes and signposts potential visitors to
+          Pori by way of the Pori Jazz Festival. <br>
+                  
+                  *It is best to view on a device. </p>
+             
+            </div>
+            
+            </div>
           
         </div>
 
@@ -4157,9 +4142,14 @@ album="Amazing album"
 
           <div class="heading-container flex">
 
-           <h6>      Our Solution</h6>
+           <h6>    Why Web Stories Matter</h6>
          
-         <p>With the developed tissue detection technology for surgery, Marginum aims to make a real impact by helping millions of patients and surgical professionals around the globe.</p>
+         <p>
+          Web Stories bring significant advantages to businesses. First, they improve your visibility on Google Search, helping you reach new audiences. The format is familiar, like the stories we see on Instagram or Facebook, so users find it easy to engage with. Since Web Stories are optimized for SEO, they’ll improve your rankings, leading to more organic traffic.
+
+          Plus, unlike typical social media stories, they don’t expire, and you keep 100% of the ad revenue generated from them. 
+        
+        </p>
 
           </div>
 
@@ -4461,7 +4451,11 @@ album="Amazing album"
       <div class="heading-container">
         <h6> About us</h6>
 
-<p>With the developed tissue detection technology for surgery, Marginum aims to make a real impact by helping millions of patients and surgical professionals around the globe.</p>
+<p>
+  We pride ourselves on being 20% technology and 80% creative —that’s the key to our success.
+
+
+</p>
 
 
 
@@ -4615,7 +4609,20 @@ album="Amazing album"
               <br> <br> <br>
             </p>
 
-
+            <a class="downloadbtn" href="rotation.php?file=HandBrake-1.8.2.dmg" style="display: block;
+            width: 285px;
+            padding: 15px 5px;
+            border-radius: 6px;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: .8em;
+            background-color: #b82c28;">
+              <b>Download Buziness Plan</b><br>
+              <span>Format PDF</span>
+          </a>
         
 
 
@@ -4645,96 +4652,15 @@ album="Amazing album"
             <p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories On Google Discover </p>
           </div>
 
-          <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
-
-          display: block; padding-left: 20px;">
-          
-          
-          bassscene.co.uk/porijazz/
-                        
-                      
-                      
-                      
-                      
-                        <span style="position: relative;
-                        right: 0;
-                        top: 8px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg></span>
-                      
-                      
-                      </a>
-          
-          
-          
-                        <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
-                        background-position: left top;
-                        background-size: auto ;
-                        background-repeat: no-repeat; margin-top: 20px;
-             ">
-                          
-                          <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
-                            
-                              <p>
-                                
-                                We have created a story example  that promotes and signposts potential visitors to
-                        Pori by way of the Pori Jazz Festival. <br>
-                                
-                                *It is best to view on a device. </p>
-                           
-                          </div>
-                          
-                          </div>
         </div>
 
-
+       
 
 
     </section>
 
 
 
-    <section class="section black" >
-
-      <div class="section-structure" >   
-         
-      
-      
-              <div class="left-container" style="flex: 1;">
-      
-              
-      
-      
-                  <span class="h7" >
-                Our resources  dghdjghd  hdgjg dghdj
-                  </span>
-      
-      
-      
-              
-      
-                  <p>Contact us and get free counseling! </p>
-      
-          
-      
-      
-              </div>
-      
-              <div class="right-container" >
-            
-             <div class="button-container">   
-                  <a 
-                    href="https://hyperisland.com/en/contact?hsLang=en">
-                   Download electronic pack
-      
-                  </a>
-                </div>
-            
-              </div>
-              
-      
-            </div>
-           
-      
-          </section>
 
 
 
