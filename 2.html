@@ -3313,6 +3313,9 @@ width:120px;
   position: relative;
     }
 
+    .footer .container {
+      padding: 0 10px;
+    }
 
     .footer__row {
       display: flex;
@@ -3320,6 +3323,7 @@ width:120px;
       row-gap: 1.25rem;
       margin: 0 auto 40px auto;
   max-width: 1142px;
+  gap: 10px;
     }
 
     @media (min-width: 768px) {
@@ -3439,6 +3443,26 @@ width:120px;
       .footer__divider {
         display: none;
       }
+    }
+
+
+    .wrapper_footer_logo {
+      width: 170px;
+
+    }
+
+
+    @media (max-width: 768px) {
+      .wrapper_footer_logo {
+      width: 110px;
+
+    }
+
+    }
+
+
+    .footer_menu_left p {
+      color:white;
     }
 
     /*** Cards-base-section ***/
@@ -4726,7 +4750,7 @@ album="Amazing album"
   <footer class="footer">
 
 
-    <div class="container" style="padding: 0 2.5rem;">
+    <div class="container" >
       <div class="footer__row">
         <div class="footer__column footer__column--menus">
           <div id="hs_cos_wrapper_footer_menu_left"
@@ -4734,9 +4758,8 @@ album="Amazing album"
             <span id="hs_cos_wrapper_footer_menu_left_"
               class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style=""
               data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu">
-              <div id="hs_menu_wrapper_footer_menu_left_"
-                class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation"
-                data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
+              <div class="footer_menu_left"
+                >
 
                 <p>
                   Tell Me Something is media-technology startup developing  Google web Stories format. This format  covers all types of media: video, audio, images, text. 
@@ -4765,7 +4788,7 @@ album="Amazing album"
 
         <div class="footer__column footer__column--contents">
 
-          <div class="wrapper_footer_logo" style="width: 170px; ">
+          <div class="wrapper_footer_logo" >
             <amp-img src="assets/images/logocolor.webp" class="contain footer-logo " layout="responsive" width="300"
               height="187"></amp-img>
 
