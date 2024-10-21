@@ -3180,7 +3180,7 @@ limitations under the License.
 
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
  
   flex:1;
 
@@ -3202,8 +3202,8 @@ justify-content: center;
 
 .carousel-wrapper .img-container amp-img{
   
-  height: 165px;
-  width: 165px;
+  height: 170px;
+  width: 170px;
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.12);
 
 }
@@ -3211,8 +3211,8 @@ justify-content: center;
 @media (max-width: 768px) {
   .carousel-wrapper .img-container amp-img{
     margin: 0 10px;
-max-height:120px;
-width:120px;
+    height: 180px;
+    width: 180px;
 
 }
 
@@ -3227,7 +3227,7 @@ width:120px;
 .carousel-wrapper .text-container {
   flex: 3;
 
-  margin-top: 20px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 
@@ -3469,7 +3469,7 @@ width:120px;
 
     .cards-base-section {
 
-      padding-top: 40px;
+      padding-top: 20px;
       padding-bottom: 40px;
       padding-left: 40px;
       padding-right: 40px;
@@ -3553,7 +3553,7 @@ width:120px;
     /*** img-right-section ***/
 
     .imgtext-section {
-      padding: 40px 40px 0 40px;
+      padding: 20px 40px 0 40px;
     }
 
     @media (max-width: 767px) {
@@ -3826,7 +3826,7 @@ width:120px;
     .section-wrapper {
   
       position: relative;
-      padding-top: 40px;
+      padding-top: 20px;
       padding-bottom: 40px;
       padding-left: 40px;
       padding-right: 40px;
@@ -4014,7 +4014,7 @@ artist="Daniel Holmes"
 album="Amazing album"
 >
 
-<source src="assets/video/hero.mp4"
+<source src="assets/video/hero-comp.mp4"
   type="video/mp4" />
 
 </amp-video> 
@@ -4044,17 +4044,60 @@ album="Amazing album"
 
           <div>
 
-<h6>Why Web Stories Matter</h6>
+<h6>What Are Web Stories?</h6>
             <p>Web Stories, is a new web-based format that allows content creators to craft engaging visual narratives for the open web. These stories immerse readers in fast-loading, full-screen experiences with captivating animations and tappable interactions. Unlike closed ecosystems or platforms, Web Stories are freely available and can be shared and embedded across various platforms.
             </p>
    
 
   
-            
-            
+            <h6 style="margin-top: 20px;
+">Why Web Stories Matter</h6>
+          <p>Web Stories bring significant advantages to businesses. First, they improve your visibility on Google Search, helping you reach new audiences. The format is familiar, like the stories we see on Instagram or Facebook, so users find it easy to engage with. Since Web Stories are optimized for SEO, they’ll improve your rankings, leading to more organic traffic.
+
+            Plus, unlike typical social media stories, they don’t expire, and you keep 100% of the ad revenue generated from them. </p>
             
 
+            <div class="button-container">
 
+              <a href="https://bassscene.co.uk/porijazz/" target="_blank">
+                Check Out An Example 
+                
+                <span style="position: relative;
+                          right: 0;
+                          top: 3px;">
+                
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
+                  
+                  
+                  
+                  <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg>
+</span>
+              </a>
+
+            </div>
+
+
+
+
+            <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
+            background-position: left top;
+            background-size: auto ;
+            background-repeat: no-repeat; margin-top: 40px;
+  ">
+              
+              <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
+                
+                  <p>
+                    
+                    We have created a story example  that promotes and signposts potential visitors to
+            Pori by way of the Pori Jazz Festival. <br>
+                    
+                    *It is best to view on a device. </p>
+               
+              </div>
+              
+              </div>
 
           </div>
 
@@ -4071,14 +4114,21 @@ album="Amazing album"
 
 
 
-        <div class="img-container col-12 md-col-6">
+        <div class=" col-12 md-col-6" style="display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;">
+
+          <div class="fixed-height-container" style="position: relative;
+          width: 320px;
+          height: auto;"> 
 
           <amp-video  autoplay loop
-          width="1920"
-          height="1080"
+          width="1080"
+          height="1920"
           layout="responsive"
           > 
-          <source src="assets/video/phone story5.mp4"
+          <source src="assets/video/phone-comp.mp4"
           type="video/mp4" />
         </amp-video>
 
@@ -4088,24 +4138,10 @@ album="Amazing album"
             <p style="color: #999; margin-top: 10px; text-align:center;"> Web Stories On Google Discover </p>
           </div>
 
-          <div class="widget" style="background-image: linear-gradient(rgba(243, 240, 237, 0.7), rgba(243, 240, 237, 0.7));
-          background-position: left top;
-          background-size: auto ;
-          background-repeat: no-repeat; margin-top: 20px;
-">
-            
-            <div class="paragraph-c" style="padding-right: 20px; padding-left: 20px; padding-top:10px; padding-bottom: 10px;">
-              
-                <p>
-                  
-                  We have created a story example  that promotes and signposts potential visitors to
-          Pori by way of the Pori Jazz Festival. <br>
-                  
-                  *It is best to view on a device. </p>
-             
-            </div>
-            
-            </div>
+
+        </div>
+
+
           
         </div>
 
@@ -4166,12 +4202,7 @@ album="Amazing album"
 
            <h6> The Unfair Advantage!</h6>
          
-         <p>
-          Web Stories bring significant advantages to businesses. First, they improve your visibility on Google Search, helping you reach new audiences. The format is familiar, like the stories we see on Instagram or Facebook, so users find it easy to engage with. Since Web Stories are optimized for SEO, they’ll improve your rankings, leading to more organic traffic.
-
-          Plus, unlike typical social media stories, they don’t expire, and you keep 100% of the ad revenue generated from them. 
         
-        </p>
 
           </div>
 
@@ -4313,8 +4344,8 @@ album="Amazing album"
 
               </div>
 
-              <div class="grid__item">
 
+              <div class="grid__item">
 
                 <div class="card ">
 
@@ -4323,22 +4354,24 @@ album="Amazing album"
               
                     <amp-img
                     media="(max-width: 980px)"
-                    src="assets/images/mob1.webp"
+                    src="assets/images/mob2.webp"
                     width=400
                     height=224
                     layout="responsive">
                 </amp-img>
                 <amp-img
                     media="(min-width: 980px)"
-                    src="assets/images/story4.webp"
+                    src="assets/images/story1.webp"
                     width="1019" height="1019" 
                     layout="responsive">
                 </amp-img>
                 
                 
               
+                
+              
+             
 
-                   
                  
                   </div>
 
@@ -4349,15 +4382,16 @@ album="Amazing album"
                     <div class="card__text" >
 
 
-                      <h4 class="h4" >Unique Selling Proposition</h4>
+                      <h4 class="h4" >Creativity</h4>
 
                       <p>
-                        We combine the best of both worlds—the familiarity of social
-                        media stories with the SEO strength of Google. We're experts
-                        in AMP technology, ensuring your content is fast and
-                        responsive. Whether you're promoting music, events, or
-                        products, our platform integrates seamlessly with your digital
-                        ecosystem, helping you stay ahead with innovative content.
+                        What sets us apart is our ability to custom-build stories to fit any brief.
+                        With years of experience in art, design, video filming, editing, and
+                        graphic design, we even offer original music composition if required.
+                        While other platforms let you build your own stories, they tend to be
+                        slower. Since we code our stories from scratch, they're fully optimized,
+                        up-to-date, and lightning-fast.
+
 
                       </p>
 
@@ -4376,27 +4410,9 @@ album="Amazing album"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               </div>
 
+   
 
 
 
@@ -4464,26 +4480,6 @@ album="Amazing album"
      
 
 
-
-                <div class="button-container">
-
-                  <a href="https://bassscene.co.uk/porijazz/" target="_blank">
-                    Check Out An Example 
-                    
-                    <span style="position: relative;
-                              right: 0;
-                              top: 3px;">
-                    
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
-                      
-                      
-                      
-                      <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg>
-    </span>
-                  </a>
-    
-                </div>
     
             
                 <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
@@ -4554,7 +4550,7 @@ album="Amazing album"
       <div class="carousel-container ">
 
         
-        <amp-carousel height="420px" layout="fixed-height" type="slides" controls>
+        <amp-carousel height="200px" layout="fixed-height" type="slides" controls>
           <div class="carousel-wrapper" >
 
             <div  class="img-container" > 
@@ -4575,26 +4571,12 @@ album="Amazing album"
             font-weight: 800;">Daniel Holmes</h5>
               <p>
     
-                Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
-                successful record label, working as a music producer and DJ, and conducting worldwide tours.
-                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+                Creative storytelling through custom-built web stories, blending art, design, video, and music to deliver engaging and interactive content for businesses.
                 
               </p>
-              <p>
-    
-                Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
-                successful record label, working as a music producer and DJ, and conducting worldwide tours.
-                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-                
-              </p>
+      
 
-              <div class="card__person" style="margin-top: 0.938rem;">
-                
-                <p class="text-small" style="font-size: 0.75rem;
-      line-height: 140%;">Head of Content </p>
-              </div>
+      
     
             </div>
     
@@ -4624,27 +4606,14 @@ album="Amazing album"
 
             <p style="margin-bottom: 0.938rem;">
   
-              My main skills are all around  UX design, web architecture and front-end technologies.
-
-              To me, web stories are more than just a technological advancement; they embody something greater. When I shared the idea og web story technology with Dan, and he pointed out their potential to change how music is showcased online, I became genuinely passionate about Tell me something project.
-             
-             
+              Technical expert specializing in optimizing and coding custom web stories, ensuring seamless functionality, fast loading times, and the latest features to deliver high-performance content.
              
           
 
             
             </p>
 
-            <p>
-    
-              Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
-              successful record label, working as a music producer and DJ, and conducting worldwide tours.
-              Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-              Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-              
-            </p>
-
-            <div class="card__person" style="margin-top: 0.938rem;">
+        
              
             </div>
   
@@ -4762,9 +4731,7 @@ album="Amazing album"
                 >
 
                 <p>
-                  Tell Me Something is media-technology startup developing  Google web Stories format. This format  covers all types of media: video, audio, images, text. 
-               and for all of them we use cutting edge technologies and techniques.
-                We believe in music and present our stories through  good modern beats.
+                  At Tel Me Something, we create engaging web stories that bring your brand to life. Our platform combines captivating visuals and interactive elements, helping businesses connect meaningfully with their audiences. Join us to transform how you share your message!
                
                
                
