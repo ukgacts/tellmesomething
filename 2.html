@@ -2310,28 +2310,17 @@ limitations under the License.
 
 
     /**header--xen**/
-    .ampstart-headerbar {
-      border-top: solid 3px black;
-      padding: 0  0 1rem 0;
-      z-index: 1000;
-      position: relative;
-      justify-content: left;
-      padding-left: 40px;
-  padding-right: 40px;
-  align-items: center;
-  left: 20px;
-    }
-
-
-
+    
     @media screen and (max-width: 767px) {
-      .ampstart-headerbar {
-        padding: 0.75rem 0;
-        padding-left: 20px;
-  padding-right: 20px;
+header {
+  height: 70px;
+  flex-direction: row-reverse;
 
-      }
+}
     }
+
+
+
 
    header .fixed-height-container {
       position: relative;
@@ -2350,6 +2339,27 @@ limitations under the License.
       height: auto;
     }
     }
+
+
+header h1 {
+
+
+
+  font-weight: 800;
+  margin-bottom: 0;
+  font-size: 1.8em;
+  line-height: .65em;
+  flex-direction: column;
+  display: flex;
+  color: #999;
+  width: fit-content;
+  position: relative;
+  top: 20px;
+}
+    header amp-img {
+      margin-top: 35px;
+    }
+
 
 
     .logo_wrapper {
@@ -3993,7 +4003,7 @@ line-height: 1;
 
 
 
-    <header class="video-hero">
+    <div class="video-hero">
 
 
 
@@ -4028,7 +4038,7 @@ album="Amazing album"
 
 
 
-    </header>
+    </div>
 
 
 
@@ -4126,7 +4136,7 @@ album="Amazing album"
           <amp-video  autoplay loop
           width="1080"
           height="1920"
-          layout="responsive"
+          layout="responsive" style="border-radius: 6px;"
           > 
           <source src="assets/video/phone-comp.mp4"
           type="video/mp4" />
@@ -4286,14 +4296,14 @@ album="Amazing album"
               
                     <amp-img
                     media="(max-width: 980px)"
-                    src="assets/images/mob2.webp"
+                    src="assets/images/mob1.webp"
                     width=400
                     height=224
                     layout="responsive">
                 </amp-img>
                 <amp-img
                     media="(min-width: 980px)"
-                    src="assets/images/story1.webp"
+                    src="assets/images/story4.webp"
                     width="1019" height="1019" 
                     layout="responsive">
                 </amp-img>
@@ -4314,16 +4324,15 @@ album="Amazing album"
                     <div class="card__text" >
 
 
-                      <h4 class="h4" >Creativity</h4>
+                      <h4 class="h4" >Unique Selling Proposition</h4>
 
                       <p>
-                        What sets us apart is our ability to custom-build stories to fit any brief.
-                        With years of experience in art, design, video filming, editing, and
-                        graphic design, we even offer original music composition if required.
-                        While other platforms let you build your own stories, they tend to be
-                        slower. Since we code our stories from scratch, they're fully optimized,
-                        up-to-date, and lightning-fast.
-
+                        We combine the best of both worlds—the familiarity of social
+                        media stories with the SEO strength of Google. We're experts
+                        in AMP technology, ensuring your content is fast and
+                        responsive. Whether you're promoting music, events, or
+                        products, our platform integrates seamlessly with your digital
+                        ecosystem, helping you stay ahead with innovative content.
 
                       </p>
 
@@ -4481,24 +4490,7 @@ album="Amazing album"
 
 
     
-            
-                <a href="https://bassscene.co.uk/porijazz/ " target="_blank" style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600; color: #167D81;
-    
-                display: block; padding-left: 20px;">
-                
-                
-                bassscene.co.uk/porijazz/
-                              
-                            
-                            
-                            
-                            
-                              <span style="position: relative;
-                              right: 0;
-                              top: 8px;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path></svg></span>
-                            
-                            
-                            </a>
+
 
 
           
@@ -4649,25 +4641,6 @@ album="Amazing album"
 
           <div>
 
-<h6>Why Web Stories Matter</h6>
-           
-
-            <p>
-
-
-              Web Stories bring significant advantages to businesses. First, they
-              improve your visibility on Google Search, helping you reach new
-              audiences. The format is familiar, like the stories we see on Instagram
-              or Facebook, so users find it easy to engage with. Since Web Stories
-              are optimized for SEO, they’ll improve your rankings, leading to more
-              organic traffic.
-              <br> <br>
-
-              Plus, unlike typical social media stories, they don’t
-              expire, and you keep 100% of the ad revenue generated from them.
-
-              <br> <br> <br>
-            </p>
 
           
 
