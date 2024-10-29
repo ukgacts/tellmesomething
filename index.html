@@ -2344,7 +2344,7 @@ header {
 header h1 {
 
 
-
+  padding-bottom: 10px;
   font-weight: 800;
   margin-bottom: 0;
   font-size: 1.8em;
@@ -2354,10 +2354,22 @@ header h1 {
   color: #999;
   width: fit-content;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
   
+@media screen and (max-width: 767px) {
 
+
+  header h1 {
+
+
+font-size: 1.45em;
+
+}
+
+
+
+}
 
     .logo_wrapper {
       justify-content: center;
@@ -3156,6 +3168,7 @@ header h1 {
     .carousel-container {
       width: 100%;
       margin: 0 auto;
+      padding-bottom: 20px;
     }
 
 
@@ -3486,7 +3499,7 @@ justify-content: center;
 
     @media (max-width: 768px) {
       .cards-base-section {
-        padding: 0 1.5%;
+        padding: 20px 1.5%;
       }
     }
 
@@ -3576,6 +3589,14 @@ justify-content: center;
     }
     }
 
+
+
+    @media (max-width: 767px) {
+.imgtext-section.section1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+}
     .imgtext-section .flex.flex-wrap {
 
       flex-direction: row;
@@ -3598,9 +3619,9 @@ justify-content: center;
   .imgtext-section.section1 .flex.flex-wrap {
     padding-top: 20px;
     flex-direction: column;
+    
   }
 }
-
 
 
 
@@ -3860,6 +3881,7 @@ justify-content: center;
       .section-wrapper {
    
         padding: 0 1.5%;
+        padding-top: 20px;
       
     }
 
@@ -3962,19 +3984,7 @@ justify-content: center;
     </div>
 
  
-    <h1 style="   font-weight: 800;  margin-bottom: 20px;
-
-
-
-font-size: 1.8em;
-
-      line-height: .65em;
-      flex-direction: column;
-     
-    display: flex;
-    color: #999;
-  width: fit-content;
-
+    <h1 style="   
     
     ">Startup Page
     <br>
