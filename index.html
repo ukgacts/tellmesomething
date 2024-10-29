@@ -2335,7 +2335,7 @@ header {
     @media screen and (max-width: 767px) {
       header .fixed-height-container {
       position: relative;
-      width: 130px;
+      width: 120px;
       height: auto;
     }
     }
@@ -2356,10 +2356,7 @@ header h1 {
   position: relative;
   top: 20px;
 }
-    header amp-img {
-      margin-top: 35px;
-    }
-
+  
 
 
     .logo_wrapper {
@@ -3543,6 +3540,13 @@ justify-content: center;
       padding: 0 0.938rem;
   }
 
+  @media (max-width: 767px) {
+    .card__text { 
+      padding: 0;
+  } 
+
+    }
+
     .card__text.h2 {
       font-size: 3rem;
       line-height: 100%;
@@ -3574,14 +3578,16 @@ justify-content: center;
 
     .imgtext-section .flex.flex-wrap {
 
-
+      flex-direction: row;
+      gap: 40px;
       justify-content: space-between;
     }
 
     @media (max-width: 767px) {
       .imgtext-section .flex.flex-wrap {
         padding-top: 20px;
-        padding-bottom: 30px;
+      
+        flex-direction: column-reverse;
      
     
 
@@ -3950,7 +3956,7 @@ justify-content: center;
     </div>
 
  
-    <h1 style="   font-weight: 800;  margin-bottom: 0;
+    <h1 style="   font-weight: 800;  margin-bottom: 20px;
 
 
 
@@ -4444,7 +4450,7 @@ album="Amazing album"
 
     <section class="imgtext-section">
 
-      <div class="flex flex-wrap " style="flex-direction: row; gap:40px;">
+      <div class="flex flex-wrap " >
 
 
         <div class="img-container " style="flex: 2; margin-bottom: 20px;">
@@ -4533,21 +4539,7 @@ album="Amazing album"
 
     
 
-
-
-          
-
-
-
-
-
-
-
-            <div class="dnd-row flex flex-between">
-
-
-
-            </div>
+            
 
           </div>
 
@@ -4640,7 +4632,7 @@ album="Amazing album"
 
             <p style="margin-bottom: 0.938rem;">
   
-              Technical expert specializing in optimizing and coding custom web stories, ensuring seamless functionality, fast loading times, and the latest features to deliver high-performance content.
+              Technical expert specializing in optimizing and coding custom web stories, ensuring seamless functionality,  and the latest features to deliver high-performance content.
              
           
 
