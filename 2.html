@@ -2335,7 +2335,7 @@ header {
     @media screen and (max-width: 767px) {
       header .fixed-height-container {
       position: relative;
-      width: 130px;
+      width: 120px;
       height: auto;
     }
     }
@@ -2344,7 +2344,7 @@ header {
 header h1 {
 
 
-
+  padding-bottom: 10px;
   font-weight: 800;
   margin-bottom: 0;
   font-size: 1.8em;
@@ -2354,13 +2354,22 @@ header h1 {
   color: #999;
   width: fit-content;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
-    header amp-img {
-      margin-top: 35px;
-    }
+  
+@media screen and (max-width: 767px) {
 
 
+  header h1 {
+
+
+font-size: 1.45em;
+
+}
+
+
+
+}
 
     .logo_wrapper {
       justify-content: center;
@@ -3157,8 +3166,9 @@ header h1 {
 
 
     .carousel-container {
-      width: 100%;
+      width: 50%;
       margin: 0 auto;
+      padding-bottom: 20px;
     }
 
 
@@ -3489,7 +3499,7 @@ justify-content: center;
 
     @media (max-width: 768px) {
       .cards-base-section {
-        padding: 0 1.5%;
+        padding: 20px 1.5%;
       }
     }
 
@@ -3543,6 +3553,13 @@ justify-content: center;
       padding: 0 0.938rem;
   }
 
+  @media (max-width: 767px) {
+    .card__text { 
+      padding: 0;
+  } 
+
+    }
+
     .card__text.h2 {
       font-size: 3rem;
       line-height: 100%;
@@ -3572,23 +3589,39 @@ justify-content: center;
     }
     }
 
+
+
+    @media (max-width: 767px) {
+.imgtext-section.section1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+}
     .imgtext-section .flex.flex-wrap {
 
-
+      flex-direction: row;
+      gap: 40px;
       justify-content: space-between;
     }
 
     @media (max-width: 767px) {
       .imgtext-section .flex.flex-wrap {
         padding-top: 20px;
-        padding-bottom: 30px;
+      
+        flex-direction: column-reverse;
      
     
 
       }
     }
 
-
+    @media (max-width: 767px) {
+  .imgtext-section.section1 .flex.flex-wrap {
+    padding-top: 20px;
+    flex-direction: column;
+    
+  }
+}
 
 
 
@@ -3848,6 +3881,7 @@ justify-content: center;
       .section-wrapper {
    
         padding: 0 1.5%;
+        padding-top: 20px;
       
     }
 
@@ -3950,19 +3984,7 @@ justify-content: center;
     </div>
 
  
-    <h1 style="   font-weight: 800;  margin-bottom: 0;
-
-
-
-font-size: 1.8em;
-
-      line-height: .65em;
-      flex-direction: column;
-     
-    display: flex;
-    color: #999;
-  width: fit-content;
-
+    <h1 style="   
     
     ">Startup Page
     <br>
@@ -4024,7 +4046,7 @@ artist="Daniel Holmes"
 album="Amazing album"
 >
 
-<source src="assets/video/hero-comp.mp4"
+<source src="https://ucarecdn.com/337ff049-5cfc-4e15-9a35-e47bfcf627f4/"
   type="video/mp4" />
 
 </amp-video> 
@@ -4043,7 +4065,7 @@ album="Amazing album"
 
 
 
-    <section class="imgtext-section">
+    <section class="imgtext-section section1">
 
       <div class="flex flex-wrap ">
 
@@ -4132,12 +4154,12 @@ album="Amazing album"
           width: 320px;
           height: auto;"> 
 
-          <amp-video  loop controls
+          <amp-video  loop autoplay
           width="1080"
           height="1920"
           layout="responsive" style="border-radius: 6px;"
           > 
-          <source src="assets/video/phone-comp.mp4"
+          <source src="https://ucarecdn.com/9ccb8350-8cc0-4fa4-be39-e2fba278b759/"
           type="video/mp4" />
         </amp-video>
 
@@ -4444,7 +4466,7 @@ album="Amazing album"
 
     <section class="imgtext-section">
 
-      <div class="flex flex-wrap " style="flex-direction: row; gap:40px;">
+      <div class="flex flex-wrap " >
 
 
         <div class="img-container " style="flex: 2; margin-bottom: 20px;">
@@ -4533,21 +4555,7 @@ album="Amazing album"
 
     
 
-
-
-          
-
-
-
-
-
-
-
-            <div class="dnd-row flex flex-between">
-
-
-
-            </div>
+            
 
           </div>
 
@@ -4584,7 +4592,7 @@ album="Amazing album"
       <div class="carousel-container ">
 
         
-        <amp-carousel height="200px" layout="fixed-height" type="slides" controls>
+        <amp-carousel height="400px" layout="fixed-height" type="carousel" controls>
           <div class="carousel-wrapper" >
 
             <div  class="img-container" > 
@@ -4640,7 +4648,7 @@ album="Amazing album"
 
             <p style="margin-bottom: 0.938rem;">
   
-              Technical expert specializing in optimizing and coding custom web stories, ensuring seamless functionality, fast loading times, and the latest features to deliver high-performance content.
+              Technical expert specializing in optimizing and coding custom web stories, ensuring seamless functionality,  and the latest features to deliver high-performance content.
              
           
 
