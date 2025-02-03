@@ -3166,7 +3166,7 @@ font-size: 1.45em;
 
 
     .carousel-container {
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
       padding-bottom: 20px;
     }
@@ -3614,6 +3614,12 @@ justify-content: center;
 
       }
     }
+
+    .section1.imgtext-section .flex.flex-wrap {
+  flex-direction: row;
+  gap: 0px;
+  justify-content: space-between;
+}
 
     @media (max-width: 767px) {
   .imgtext-section.section1 .flex.flex-wrap {
@@ -4592,7 +4598,7 @@ album="Amazing album"
       <div class="carousel-container ">
 
         
-        <amp-carousel height="400px" layout="fixed-height" type="carousel" controls>
+        <amp-carousel height="200px" layout="fixed-height" type="slides" controls>
           <div class="carousel-wrapper" >
 
             <div  class="img-container" > 
